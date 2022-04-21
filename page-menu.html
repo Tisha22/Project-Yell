@@ -1,0 +1,499 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Yell</title>
+  </head>
+  <body>
+  	<style>
+      .topnav {
+      overflow: hidden;
+      background-color: #ffffff;
+      border-color:#000000;
+      width: 100%;
+      height: 500px;
+      background-color:white;
+      position: fixed;
+
+      }
+      .menu {
+    position: relative;
+    top: 20px;
+    left: 30px;
+		width: 30px;
+		height: 5px;
+		background-color: black;
+		margin: 6px 0;
+}
+
+    .image{
+      position: absolute;
+      left:280px; 
+      top:120px;
+    } 
+    .navbar-right{
+      position: absolute;
+      top:10%;
+      right: 5%;
+    }
+
+    .a1{
+      text-decoration: none;
+      color: black;
+    }
+    .a1:hover{
+      text-decoration: none;
+      color: grey;
+    }
+
+
+    /*SideBar*/
+    .slogo{
+  position:absolute;
+  top:30px;
+  left:5px;
+
+}
+.tab {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  margin:0px;
+  width: 250px;
+  height: 410px;
+  position:absolute;
+  top:200px;
+  left:0px;
+  position: fixed;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+  text-align:center;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+  border-bottom:2px solid black;
+
+}
+
+.cbar{
+      padding: 40px;
+      width: 80%;
+      height: 100px;
+      background-color:#D5D5D5;
+      font-family: Trebuchet MS,cursive;
+      text-align: center;
+      position: absolute;
+      top: 103%;
+      left: 20%;
+  }
+.container {
+  border-radius: 5px;
+  background-color:white;
+  padding: 35px;
+  width: 120%;
+  position:relative;
+  left: 30%;
+}
+.p1{
+  font-family:'Trebuchet MS', cursive;
+  font-size: label;
+  color: black;
+}
+
+/*Complain Form*/
+input[type=text], select, textarea {
+  width: 25%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  resize: horizontal;
+}
+
+input[type=submit] {
+  background-color: #1f1f1f;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #000000;
+}
+
+input[type= a file] {
+  background-color: #1f1f1f;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type= file]:hover {
+  background-color: #000000;
+}
+.container3{
+  position: absolute;
+  top: 240%;
+  left: 20%;
+  background-color: white;
+}
+      .addbtn{
+        background-color: whitesmoke;
+        text-align: center;
+        padding: 20px;
+        width: 150px;
+        height: 50px;
+        border: none;
+        border-radius: 5px;
+        border: grey;
+        box-shadow: 0px 2px  2px #888888;
+      }
+
+
+      .wrap{
+        word-wrap:initial;
+      }
+      .container2{
+        background-color: rgb(0, 0, 0, 0.1);
+        border-radius: 0%;
+        padding: 15px;
+        height: 120%;
+        width: 40%;
+        position: relative;
+        left: 0%;
+      }
+
+      .box{
+  padding: 20px;
+  border:1px solid #D5D5D5;
+  width: 50%;
+}
+
+.container4{
+  position: absolute;
+  top: 420%;
+  left: 40%;
+  background-color: white;
+}
+
+
+    .footer1{
+      padding: 40px;
+      width: 179%;
+      height: 100px;
+      background-color:#D5D5D5;
+      font-family: Trebuchet MS,cursive;
+    }
+    .footer2{
+    padding: 40px;
+    width: 179%;
+    height: 120px;
+    color: white;
+    background-color:#000000;
+    font-family: Trebuchet MS,cursive;
+    }
+
+    .fa {
+    padding: 15px;
+    font-size: 30px;
+    width: 60px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+    position: relative;
+    left: 45%;
+
+    }
+
+    .fa:hover {
+      opacity: 0.8;
+      color: white;
+      text-decoration: none;
+    }
+
+    .fa-facebook {
+    background: #3B5998;
+    color: white;
+    }
+
+    .fa-twitter {
+    background: #55ACEE;
+    color: white;
+    }
+
+    .fa-google {
+    background: #dd4b39;
+    color: white;
+    }
+
+    .fa-linkedin {
+    background: #007bb5;
+    color: white;
+    }
+
+  	</style>
+
+
+
+
+
+  		
+<div class="topnav">
+  	<div class="shadow-sm p-3 mb-5 bg-body rounded">
+  						<a class="menu" href="D:\Project Yell\Front End\1.Page(Home)\1.Page(Home).html" >
+      <div class="menu"></div>
+      <div class="menu"></div>
+      <div class="menu"></div>
+   
+              </a>
+
+			<img src="yell-logo.png" width="240" height="130" 
+      style="position: relative;
+      top: -10px;  
+      left: 500px;">
+
+			<div class="navbar-right">
+        <a href="#" class="a1">Search</a>&nbsp;&nbsp;&nbsp;
+        <a href="D:\Project Yell\Front End\3.Sign In\Sign In.html" class="a1">Sign In</a>&nbsp;&nbsp;
+			</div>
+		</div>
+</div>
+
+
+          <div class="tab">
+     <button class="tabbutton"><a href="#" style="text-decoration:none; font-family: 'Trebuchet MS', cursive;color:black"><img src="home.png" width="20" height="18" style="position: relative;right:5px;" />Home</a></button>
+     <button class="tabbutton"><a href="#" style="text-decoration:none; font-family: 'Trebuchet MS', cursive;color:black;position: relative;right:5px;"><img src="visit.png"width="20" height="18">&nbsp;&nbsp;Visit</a></button>
+     <br><br><br><br><br><br><br><br>
+      <p style="font-size:13px;">
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        You are seeing as guest;Please <a href="#" style="color:rgb(192,0,0);font-family: 'Trebuchet MS', cursive;text-decoration:none;">(log in)</a></p>
+    </div>
+
+    <div class= "image">
+      <h6 style="font-family: Trebuchet MS,cursive;font-size: 30px;color: #C00000;position:relative;top:-90%;
+      left: 70%;"></h6>
+      <img src= "img (1).jpeg" class="image" width="500" height="360">
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <!--     Complain Form -->
+    <div class="cbar" style="font-family: Trebuchet MS,cursive;"><b>Drop Your Complain</b></div>
+    <div style="position: absolute;top:720px;">
+          <div class="container">
+      
+        <label for="fname" class="p1">Name:</label>
+        <input type="text" id="name" name="name" placeholder="your name..">
+
+        <label for="lname" class="p1">Mobile: </label>
+        <input type="text" id="lname" name="Mobile" placeholder="+880">
+
+        <label for="Email" class="p1">Email: </label>
+        <input type="text" id="lname" name="Email" placeholder="email"><br>
+
+        <label for="Age" class="p1">Age: </label>
+        <input type="text" id="age" name="email" placeholder=" your age">
+
+
+        <label for="City" class="p1">City: </label>
+        <select id="City" name="City" class="p1">
+          <option value="Dhaka">Dhaka</option>
+          <option value="Sylhet">Sylhet</option>
+          <option value="Barishal">Barishal</option>
+          <option value="Chittagong">Chittagong</option>
+          <option value="Khulna">Khulna</option>
+          <option value="Rajshahi">Rajshahi</option>
+        </select>
+
+        <label for="Gender" class="p1">Gender: </label>
+        <select id="Gender" name="Gender">
+          <option value="Female">Female</option>
+          <option value="Male">Male</option>
+          <option value="Others">Others</option>         
+        </select><br>
+
+    <label for='Platform' class="p1">Platform: </label>
+        <select id="Platform" name="Platform">
+          <option value="Facebook">Facebook</option>
+          <option value="Youtube">Youtube</option>
+          <option value="Others">Others</option>
+        </select>
+        <label for='Evidence' class="p1">Evidence: </label>
+        <Button class="addbtn">Add File</Button>
+        <br><br>
+        <label for="Write Problem" class="p1">Write Problem:</label>
+        <br>
+        <textarea id="subject" name="subject" placeholder="your words,our yell.." style=  "height:50%""width:30%" ></textarea>
+        <br>
+        <input type="submit" value="Submit">
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+<!-- This Week Section -->
+  <div class="cbar" style="position:absolute;top:220%;">
+    <h5><b>This Week</b></h5>
+  </div>
+
+        <div class="container3">
+
+        <br><br> 
+          <div align="center">
+            <a href="#" style="text-decoration:none; color:black;">
+             <h4 style="text-align: center;font-family: Trebuchet MS,cursive;"> Workshop</h4>
+             <img src="img (5).jpeg" width="350" height="170" align="center">
+            </a>
+           </div>
+
+        <br><br><br> 
+          <div align="center">
+            <a href="#" style="text-decoration:none; color:black;">
+              <h4 style="text-align: center;font-family: Trebuchet MS,cursive;"> Blog </h4>
+                <div class="wrap container2" >
+                <b style="text-decoration:underline;">Cyber Bully Awareness</b><br>
+                    Hey Guys,
+                    I finished high school last year and to say
+                    the least it was tough. I had friends but I
+                    never really felt like I fit in, this intensified
+                    when I started to struggle with depression.
+                    During last year I was exposed to some horrid
+                    cyber abuse. ...See more
+                </div>
+            </a>
+         </div>  
+
+        <br> <br><br>
+      
+      <div align="center">
+        <a href="#" style="text-decoration:none; color:black;">
+          <h4 style="text-align: center;font-family: Trebuchet MS,cursive;"> Vlog </h4>
+          <video src='V (1).mp4'width='350'length='200' align="center" poster=
+          'thumb.jpg'loop controls class='video'></video>
+        </a>
+      </div>
+    </div>
+</div>
+<br><br><br>
+
+
+
+
+
+
+
+
+<!-- Who we are -->
+  <div class="cbar" style="position:absolute;top:400%;">
+    <h5><b>Who we are</b></h5>
+  </div>
+      <div class="container4">
+        <div align="left">
+            <h5 style="font-family: Trebuchet MS,cursive"><b>About Us</b></h5>
+            <br>
+            <p class="" align="left" style="font-family: Trebuchet MS,cursive">
+              <p1 style = "font-family: Comic Sans MS,cursive; color:#C00000;">Yell</p1>  is an inquiry messenger team.
+                And also an investigation research department
+                based on Cyber crime.
+                In the Bangladesh and all over the world
+                its rare view to see instant step for the bullying
+                or harrassment.<br>
+                Our motto:”Scream against crime”
+              </p>
+        </div>
+        <div align="left">
+            <h5 style="font-family: Trebuchet MS,cursive"><b>Contact Us</b></h5>
+                <br>
+                   <p class="" align="left" style="font-family: Trebuchet MS,cursive">
+                          <b>Address:</b>
+                            12/A,K block,Baridhara,Dhaka,Bangladesh.
+                            <br><br><b>Email:</b> <a href="#" style="text-decoration:underline;color: blue;">
+                            <br>yell11@gmail.com</a>
+                            <br><br><b>Facebook Page:</b> <a href="#" style="text-decoration:underline;color: blue;"> <br>//yell.11</a><br><br>
+                          <b>Instagram follow:</b><br> Yell
+                   </p>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+<!-- Footer Section-->
+    <div style="position:absolute;top:550%;">
+      <div class="footer1">
+        <h5 class="d-inline p-5">STAY WITH US</h5><br>
+        <p class="d-inline p-5 ">Don't miss the daily updates & news at <p1 style = "font-family: Comic Sans MS,cursive; color:#C00000;">Yell</p1></p>
+      </div>
+
+      <div class="footer2">
+          <p class="d-inline p-5">Copyright © <p1 style = "font-family: Comic Sans MS,cursive; color:#C00000;">Yell</p1> . All right reserved</p>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-google"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+      </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
